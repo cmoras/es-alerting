@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  annotations:
+    meta.helm.sh/release-name: elastalert
+    meta.helm.sh/release-namespace: default
+  creationTimestamp: null
+  labels:
+    app: elastalert
+    app.kubernetes.io/managed-by: Helm
+    chart: elastalert-1.6.0
+    heritage: Helm
+    release: elastalert
+  name: elastalert
+  selfLink: /api/v1/namespaces/default/serviceaccounts/elastalert
+secrets:
+- name: elastalert-token-5mj2q
